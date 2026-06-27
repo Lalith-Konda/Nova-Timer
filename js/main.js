@@ -9,15 +9,18 @@ function toggleTimer() {
     }
 }
 
-// For desktops/laptops: spacebar
+// Spacebar for PCs/laptops
 document.addEventListener("keydown", (event) => {
     if (event.code === "Space") {
-        event.preventDefault(); // prevent page scroll
+        event.preventDefault(); // stops page scrolling
         toggleTimer();
     }
 });
 
-// For mobiles: touch
-document.addEventListener("touchstart", () => {
-    toggleTimer();
+// Touch for mobiles
+document.addEventListener("touchstart", (event) => {
+    // Only trigger if it's a single tap, not multi-touch
+    if (event.touches.length === 1) {
+        toggleTimer();
+    }
 });
