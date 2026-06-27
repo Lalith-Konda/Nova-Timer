@@ -1,6 +1,8 @@
 import * as Timer from "./timer.js";
 import { updateDisplay, setState } from "./ui.js";
 
+const resetButton = document.getElementById("resetButton");
+
 const HOLD_TIME = 300;
 
 let state = "IDLE";
@@ -116,5 +118,13 @@ document.addEventListener("touchend", () => {
         setState("RUNNING");
 
     }
+
+});
+
+resetButton.addEventListener("click", () => {
+
+    if (Timer.running()) return;
+
+    updateDisplay(0);
 
 });
