@@ -41,6 +41,21 @@ body{
 }
 
 
+#controls {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-top: 35px;
+
+    width: 100%;
+
+}
 
 #controls button {
 
