@@ -206,6 +206,13 @@ body{
 
 }
 
+#sidebar h2 {
+
+    margin-top: 72px;
+    margin-left: 8px;
+
+}
+
 /* ---------- CONTENT ---------- */
 
 #content{
@@ -216,6 +223,6 @@ body{
 
 #content.shift{
 
-    transform: translateX(140px);
+    transform: translateX(180px);
 
 }
