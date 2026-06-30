@@ -10,6 +10,8 @@ const plus2Button = document.getElementById("plus2Button");
 const dnfButton = document.getElementById("dnfButton");
 
 const solvesPageButton = document.getElementById("solvesPageButton");
+const statisticsPageButton = document.getElementById("statisticsPageButton");
+const settingsPageButton = document.getElementById("settingsPageButton");
 
 let lastTime = 0;
 let hasPlus2 = false;
@@ -220,5 +222,17 @@ menuButton.addEventListener("click", () => {
 solvesPageButton.addEventListener("click", () => {
 
     window.location.href = "solves.html";
+
+});
+
+statisticsPageButton.addEventListener("click", () => {
+
+    window.location.href = "statistics.html";
+
+});
+
+settingsPageButton.addEventListener("click", () => {
+
+    window.location.href = "settings.html";
 
 });
