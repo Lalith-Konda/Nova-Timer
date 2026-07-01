@@ -1,5 +1,9 @@
 const solves = JSON.parse(localStorage.getItem("solves")) || [];
 
+const validTimes = solves
+    .filter(s => !s.dnf)
+    .map(s => s.time + (s.plus2 ? 2 : 0));
+
 function average(arr){
 
     return arr.reduce((a,b)=>a+b,0)/arr.length;
@@ -29,13 +33,13 @@ if(solves.length){
         solves.at(-1).toFixed(2);
 
     document.getElementById("bestSolve").textContent =
-        Math.min(...solves).toFixed(2);
+        Math.min(...validTimes).toFixed(2);
 
     document.getElementById("worstSolve").textContent =
-        Math.max(...solves).toFixed(2);
+        Math.max(...validTimes).toFixed(2);
 
     document.getElementById("averageSolve").textContent =
-        average(solves).toFixed(2);
+        average(validTimes).toFixed(2);
 
 }
 
