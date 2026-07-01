@@ -375,3 +375,70 @@ body{
     background:#333;
 
 }
+
+
+#statistics{
+
+    width:420px;
+
+    background:#1b1b1b;
+
+    padding:35px;
+
+    border-radius:18px;
+
+}
+
+#statistics h1{
+
+    color:rgb(255,171,93);
+
+    margin-bottom:25px;
+
+}
+
+.stat{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:14px 0;
+
+    border-bottom:1px solid #2f2f2f;
+
+    font-size:1.1rem;
+
+}
+
+.stat strong{
+
+    color:white;
+
+}
+
+#statistics button{
+
+    margin-top:30px;
+
+    width:100%;
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#242424;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+#statistics button:hover{
+
+    background:#313131;
+
+}
